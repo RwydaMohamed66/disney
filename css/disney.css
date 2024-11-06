@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    /* display: flex; */
+
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bolder;
+}
+
+.logo{
+    width: 110px;
+    height: 70px;
+    justify-content: start;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.disney{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.movies{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Developed{
+    background-color: rgb(27, 153, 251);
+    color: rgb(255, 255, 255);
+    border: #000000 2px solid;
+    height: 25px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 120px;
+    padding: 0px 36px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+.Developed >p{
+    margin-top: 2px;
+}
+.eng{
+    background-color: rgb(27, 153, 251);
+    color: rgb(255, 255, 255);
+    border: #000000 2px solid;
+    height: 25px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 120px;
+    padding: 0px 36px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+.eng >p{
+    margin-top: 2px;
+}
+
+.vid{
+    width: 100%;
+    height: 600px;
+}
+video{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-fit: cover;
+    z-index: -1;
+    display: inline;
+}
+
+
+sub{
+    position: relative;
+    z-index: 1;
+}
+
+.Subscribe{
+    background-color: rgb(27, 153, 251);
+    color: aliceblue;
+    border:none;
+    border-radius: 30px;
+    padding: 10px 16px;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+.Subscribe:hover{
+    cursor: pointer;
+    background-color:rgba(27, 153, 251,0.2); ;
+}
+.main{
+    background-color: rgb(0, 13, 65);
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px;
+
+
+}
+
+.frame1 , .frame2 , .frame3 , .frame4{
+    flex: 1;
+    height: 60%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    animation: slide-in-out 2s ease-out forwards; 
+
+}
+@keyframes slide-in-out {
+    from {
+        left: -700px; 
+    }
+    to {
+        left: 0; 
+    }
+}
+._11 {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+._11:hover {
+    transform:scale(1.1)
+    translateZ(20px);
+    cursor: pointer;
+    
+}
+.end{
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    margin-top: -22px;
+}
+.end > p{
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration:underline;
+    margin-top: 60px;
+}
+.fly{
+    margin: 5% 5% 6% 5%;
+
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+._15{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+    display: flex;
+    z-index: -1;
+}
+
+._15:hover{
+    transform:scale(1.1)
+    translateZ(20px);
+    cursor: pointer;
+}
+
+.infoo{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+.about{
+    font-size: 1.65vw;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    color: aliceblue;
+}
+.book{
+    text-decoration: none;
+    color: aliceblue;
+}
